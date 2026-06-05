@@ -1,0 +1,39 @@
+
+build/
+bin/
+obj/
+# --- Executables ---
+
+*.exe
+*.out
+# --- Phase 5: Neural Network weights ---
+
+*.bin
+*.model
+test_model.bin
+
+# --- Tooling & IDEs ---
+# Clangd creates a local cache for autocomplete. Skip it.
+.clangd/
+.cache/
+.vscode/
+
+# --- CMake leftovers ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# --- OS Junk ---
+.DS_Store
+Thumbs.db
+
+# --- Temporary scripts & artifacts ---
+_write_*.py
+test_results.txt
+*.txt
+!README.md
+!CMakeLists.txt
+
+*.csv
